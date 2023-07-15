@@ -12,6 +12,12 @@ app.set("view engine", "ejs");
 app.get("/",function(req,res){
     res.render("home");
 })
+app.get("/getbooks",function(req,res){
+    let obj = {
+        name:"Satwik"
+    }
+    res.send(obj);
+})
 
 
 const PORT = process.env.PORT || 3000;
