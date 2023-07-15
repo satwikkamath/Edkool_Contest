@@ -12,6 +12,8 @@ app.set("view engine", "ejs");
 app.get("/",function(req,res){
     res.render("home");
 })
+
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function () {
