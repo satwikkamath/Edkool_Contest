@@ -1,7 +1,7 @@
 <%- include("partials/header.ejs") %>
     <nav class="navbar fixed-top py-3 navbar-expand-lg">
         <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1 mx-4" href="#">
+            <span class="navbar-brand mb-0 h1 mx-4 noto" href="#">
                 <img src="/images/favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                 The Book Vault
             </span>
@@ -12,25 +12,224 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active mx-4" aria-current="page" href="#">Home</a>
-                    <a class="nav-link mx-4" href="#">About Us</a>
-                    <button type="button" class="btn btn-primary mx-2">Login</button>
-                    <button type="button" class="btn btn-primary mx-2">SignUp</button>
+                    <a class="nav-link active mx-4 sans" aria-current="page" href="#">Home</a>
+                    <a class="nav-link mx-4 sans" href="#">About Us</a>
+                    <button type="button" class="btn btn-primary mx-2 sans">Login</button>
+                    <button type="button" class="btn btn-primary mx-2 sans">SignUp</button>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="container mt-5" >
-        <div class="row">
-            <div class="col d-flex justify-content-center align-items-center">
-                <h1>A great book should leave you with many experiences, and slightly exhausted at the end. You live
-                    several lives while reading.</h1>
+    <div class="row mt-5 pt-5 bgimg">
+
+        <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+            <h1 class="ps-4 noto">A great book should leave you with many experiences, and slightly exhausted at the
+                end. You live
+                several lives while reading.</h1>
+        </div>
+
+    </div>
+    <div class="mainBody px-4">
+
+        <div class="services">
+            <h1 class="noto">Our services</h1>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title noto">Discover Trusted Books And Reviews</h5>
+                            <p class="card-text sans">Access a wealth of book reviews and ratings provided by our
+                                community
+                                of
+                                readers. Make informed decisions with trusted recommendations, enabling you to choose
+                                books
+                                that resonate with your interests and preferences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title noto"> Explore the World of eBooks</h5>
+                            <p class="card-text sans"> Access a vast collection of eBooks and enjoy the convenience of
+                                instant
+                                downloads. Dive into captivating stories, informative non-fiction, and educational
+                                resources, all available for online reading or offline reading with downloadable eBooks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title noto">Enhance Your Reading Experience</h5>
+                            <p class="card-text sans"> Discover a range of reading accessories and merchandise to
+                                enhance
+                                your
+                                reading pleasure. From bookmarks and book lights to book-themed merchandise, find the
+                                perfect accompaniment for your reading journey.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title noto">Get to Know the Masters of Literature</h5>
+                            <p class="card-text sans">Delve deeper into the world of authors through our exclusive
+                                author
+                                spotlights and interviews. Gain valuable insights into their creative process, literary
+                                influences, and personal anecdotes, connecting readers with the minds behind the words.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="col d-flex ">
-                <img class="img1" src="images/mainbook3.jpg" alt="">
+        </div>
+        <div class="famous">
+            <h1>Our famous Books</h1>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card justify-content-center">
+                        <img class="mx-auto mt-4" src="http://books.google.com/books/content?id=1hfMDQAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title noto text-center ">Growing Flowers</h5>
+                            <p class="card-text sans text-center ">Everything You Need to Know About Planting, Tending, Harvesting
+                                and Arranging Beautiful Blooms</p>
+                            <p class="card-text sans text-center ">Author : Niki Irving</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title noto"> Explore the World of eBooks</h5>
+                            <p class="card-text sans"> Access a vast collection of eBooks and enjoy the convenience of
+                                instant
+                                downloads. Dive into captivating stories, informative non-fiction, and educational
+                                resources, all available for online reading or offline reading with downloadable eBooks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title noto">Enhance Your Reading Experience</h5>
+                            <p class="card-text sans"> Discover a range of reading accessories and merchandise to
+                                enhance
+                                your
+                                reading pleasure. From bookmarks and book lights to book-themed merchandise, find the
+                                perfect accompaniment for your reading journey.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title noto">Get to Know the Masters of Literature</h5>
+                            <p class="card-text sans">Delve deeper into the world of authors through our exclusive
+                                author
+                                spotlights and interviews. Gain valuable insights into their creative process, literary
+                                influences, and personal anecdotes, connecting readers with the minds behind the words.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
+        <div class="authors">
+            <h1>What our authors say</h1>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title noto">Discover Trusted Book Reviews</h5>
+                            <p class="card-text sans">Access a wealth of book reviews and ratings provided by our
+                                community
+                                of
+                                readers. Make informed decisions with trusted recommendations, enabling you to choose
+                                books
+                                that resonate with your interests and preferences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title noto"> Explore the World of eBooks</h5>
+                            <p class="card-text sans"> Access a vast collection of eBooks and enjoy the convenience of
+                                instant
+                                downloads. Dive into captivating stories, informative non-fiction, and educational
+                                resources, all available for online reading or offline reading with downloadable eBooks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title noto">Enhance Your Reading Experience</h5>
+                            <p class="card-text sans"> Discover a range of reading accessories and merchandise to
+                                enhance
+                                your
+                                reading pleasure. From bookmarks and book lights to book-themed merchandise, find the
+                                perfect accompaniment for your reading journey.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title noto">Get to Know the Masters of Literature</h5>
+                            <p class="card-text sans">Delve deeper into the world of authors through our exclusive
+                                author
+                                spotlights and interviews. Gain valuable insights into their creative process, literary
+                                influences, and personal anecdotes, connecting readers with the minds behind the words.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="faq">
+            <h1>FAQs</h1>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        Column
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Column
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Column
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Column
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Column
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Column
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
     <%- include("partials/footer.ejs") %>

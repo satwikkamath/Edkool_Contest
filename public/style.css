@@ -1,12 +1,40 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&family=Open+Sans&display=swap');
+
+
+
+* {
     margin: 0;
     padding: 0;
+    
 }
 
-.img1{
-    width: 100%;
+.noto {
+
+    font-family: 'Noto Serif', serif;
 }
 
-.width-50{
+.sans {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.navbar {
+    background-color: white;
+}
+
+
+.width-50 {
     width: 50%;
+}
+
+.bgimg {
+    background: url('images/final3.jpg') center center/cover;
+    height: 60vh;
+    /* /* width: 100%; */
+    /* overflow: hidden;  */
+}
+
+.card img{
+    height: 30vh;
+    width: 10vw;
 }
