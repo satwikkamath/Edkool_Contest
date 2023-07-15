@@ -1,16 +1,30 @@
 // const axios = require('axios');
 
-async function getBookData() {
-    let a;
-    const response = await fetch("/getbooks");
-    const data = await response.json();
-    a = data.name;
-    return a;
-  }
-let b;
-document.getElementById("btn").addEventListener('click',function(){
-    getBookData().then(function(res){
-        b= res;
-    })
-    
+const getBookList = async (sendData) => {
+    let options = {
+            method: "POST",
+            headers: {
+                    "Content-type": "application/json"
+            },
+            body: JSON.stringify(sendData),
+    }
+    let p = await fetch('/getBooks', options)
+    let response = await p.json()
+    return response
+}
+
+document.getElementById("btn").addEventListener('click', function () {
+    const bookName = document.getElementById("bookName").value;
+    // console.log(bookName);
+    const mainFunc = async () => {
+        let sendData = {
+            title: bookName,
+
+        }
+        let bookList = await getBookList(sendData)
+        console.log(bookList)
+        
+    }
+
+    mainFunc()
 })
