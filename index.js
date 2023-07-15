@@ -17,8 +17,10 @@ app.get("/",function(req,res){
 })
 app.post("/getBooks",function(req,res){
     const bookName = req.body.title;
-    const url = "https://www.googleapis.com/books/v1/volumes?q="+bookName+"&projection=lite&key=AIzaSyDP2Az4y5Y4M6euPYH3u1YERY7eOqUMpJ8";
+    const url = "https://www.googleapis.com/books/v1/volumes?q="+bookName+"&projection=lite&key=AIzaSyDP2Az4y5Y4M6euPYH3u1YERY7eOqUMpJ8&startIndex=0&maxResults=27";
     
+    
+
     https.get(url,function(response){
         let data = '';
 
@@ -28,10 +30,11 @@ app.post("/getBooks",function(req,res){
 
         response.on("end",function(){
             const bookList = JSON.parse(data)
-            res.json(bookList);
-            // console.log(bookList);
+                res.json(bookList);
         })
     })
+
+    
 
 })
 
