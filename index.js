@@ -91,7 +91,7 @@ app.post("/userLogin", function (req, res) {
 })
 app.post("/getBooks",function(req,res){
     const bookName = req.body.title;
-    const url = "https://www.googleapis.com/books/v1/volumes?q="+bookName+"&projection=lite&key=AIzaSyDP2Az4y5Y4M6euPYH3u1YERY7eOqUMpJ8&startIndex=0&maxResults=27";
+    const url = "https://www.googleapis.com/books/v1/volumes?q="+bookName+"&filter=free-ebooks&projection=lite&key=AIzaSyDP2Az4y5Y4M6euPYH3u1YERY7eOqUMpJ8&startIndex=0&maxResults=27";
     
     
 
