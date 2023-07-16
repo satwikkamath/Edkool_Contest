@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+
+<div class="containerf">
+    <div class="form-container">
+      <form action="/userSignUp" method="post">
+        <h2 class="sans">Sign Up</h2>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="number" name="phno" placeholder="Phone Number" required>
+        
+        <input type="email" name="email" placeholder="Email" required>
+        
+
+        <input type="password" name ="password" placeholder="Password" required>
+        <input type="password" name ="cpassword" placeholder="Confirm Password" required>
+        <% if(error){ %>
+          
+          <div class="alert alert-danger" role="alert">Passwords Do not Match</div>
+          <% } %>
+
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+<%- include("partials/footer.ejs") %>
