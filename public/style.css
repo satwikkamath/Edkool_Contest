@@ -51,6 +51,9 @@
         .disp-hidden{
             display: none;
         }
+        .input-group{
+            width: 100%;
+        }
 }
 
 .blue{
@@ -164,4 +167,9 @@
 
 .disp-none{
     display: none;
+}
+
+.btn-size{
+    width: 50%;
+    margin: auto;
 }

@@ -13,8 +13,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active mx-4 sans" aria-current="page" href="#">Home</a>
-                <a class="nav-link mx-4 sans" href="#">About Us</a>
+                <a class="nav-link active mx-4 sans" aria-current="page" href="/userPageFromUserList">Home</a>
                 <form action="/userList" method="post">
                     <input type="text" name="userName" value = "<%= userName %>" id="" hidden>
                     <button class="btn btn-primary mx-2 sans" href="/userList">My List</a>
@@ -31,11 +30,43 @@
     </div>
 
 </div>
+
 <div class="mainBody px-4">
 
     <div class="findBook my-5 py-5 px-5" id="findbook">
         <h1 class="noto text-center mb-5">Your List</h1>
-        
+        <div class="row">
+        <% if(data[0]){ %>
+                <% data.forEach(element => { %>
+                    <div class="col-sm-12 col-md-6 col-lg-4 my-3 d-flex align-items-stretch">
+                        <div class="card text-center">
+                            <img class="mx-auto mt-4"
+                                src="<%= element.imgurl %>"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title noto text-center "><%= element.bookName %></h5>
+                                <p class="card-text sans text-center "><%= element.subName %></p>
+                                <p class="card-text sans text-center ">Author : <%= element.author %></p>
+                                <a class="btn btn-primary mx-2 sans" href="<%= element.readurl%>" target="_blank">Read Online</a> <br><br>
+                                <form action="/removeFromList" method="post">
+                                    <input type="text" name="userEmail" value = "<%= userEmail %>" id="" hidden>
+                                    
+                                    <input type="text" name="bookName" value = "<%= element.bookName %>" id="" hidden>
+
+                                    <button type="submit" class="btn btn-primary btn-size">Remove From List</button>
+                                </form>                        
+                            </div>
+                        </div>
+                    </div>
+              <%  }); %>
+        </div>
+            <% }else{ %>
+                <div class="alert alert-danger" role="alert">
+                    You have not saved any books
+                  </div>
+                
+
+                <% } %>
     </div>
 </div>
 
