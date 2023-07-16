@@ -2,7 +2,7 @@
 
 <nav class="navbar fixed-top py-3 navbar-expand-lg">
     <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1 mx-4 noto" href="#">
+        <span class="navbar-brand mb-0 h1 mx-4 noto animation" href="#">
             <img src="/images/favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             The Book Vault
         </span>
@@ -13,10 +13,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active mx-4 sans" aria-current="page" href="/userPageFromUserList">Home</a>
+                <a class="nav-link active mx-4 sans animation" aria-current="page" href="/userPageFromUserList">Home</a>
                 <form action="/userList" method="post">
                     <input type="text" name="userName" value = "<%= userName %>" id="" hidden>
-                    <button class="btn btn-primary mx-2 sans" href="/userList">My List</a>
+                    <button class="btn btn-primary mx-2 sans animation" href="/userList">My List</a>
                 </form>
                 
             </div>
@@ -34,7 +34,7 @@
 <div class="mainBody px-4">
 
     <div class="findBook my-5 py-5 px-5" id="findbook">
-        <h1 class="noto text-center mb-5">Your List</h1>
+        <h1 class="noto text-center mb-5 animation">Your List</h1>
         <div class="row">
         <% if(data[0]){ %>
                 <% data.forEach(element => { %>

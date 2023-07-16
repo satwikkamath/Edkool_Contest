@@ -204,3 +204,18 @@
     transform: translateX(0);
     opacity: 1;
 }
+
+@keyframes anim1 {
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.animation{
+    animation: anim1 1.5s ease-in-out;
+}
