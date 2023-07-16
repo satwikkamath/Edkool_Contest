@@ -141,6 +141,7 @@
 .findBook{
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    
 }
 .findBook .input-group{
     width: 50%;
@@ -153,4 +154,14 @@
     margin-bottom: 20px;
     border: none;
     font-size: 16px;
+}
+
+.card{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.disp-none{
+    display: none;
 }

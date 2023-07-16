@@ -112,7 +112,10 @@ app.post("/getBooks",function(req,res){
 
 })
 
-
+app.post("/userList",function(req,res){
+    const userName = req.body.userName;
+    res.render("userList",{userName:userName});
+})
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function () {
