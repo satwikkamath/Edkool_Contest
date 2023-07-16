@@ -30,11 +30,49 @@
 .bgimg {
     background: url('images/final3.jpg') center center/cover;
     height: 60vh;
-    /* /* width: 100%; */
+    width: 100%;
     /* overflow: hidden;  */
 }
 
 .card img{
-    height: 30vh;
+    height: 25vh;
     width: 10vw;
+}
+
+.carousel{
+    height: 60vh;
+}
+.carousel-item .row{
+    width: 80%;
+}
+
+@media only screen and (max-width:767px)
+{
+        .disp-hidden{
+            display: none;
+        }
+}
+
+.blue{
+    background-color: var(--bs-primary);
+    color: white;
+}
+.hover-blue{
+    transition: all 0.2s ease-in-out;
+}
+.hover-blue:hover{
+    background-color: var(--bs-primary);
+    color: white;
+}
+
+
+.faq{
+    background-color: #f1f7fd;
+    
+}
+
+.accordion{
+    width: 75%;
+    margin: auto;
+
 }
