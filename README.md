@@ -25,6 +25,12 @@ The platform is designed with a user-friendly and accessible interface, making i
 ### 8. User Interaction and Reviews 💬
 The Book Vault can allow users to interact with the platform and with each other. This may include features such as leaving reviews, rating books, and participating in discussions about books. User-generated content enhances the community aspect of the platform and helps users make informed reading choices.
 
+## Demo Video: 
 
+https://github.com/satwikkamath/Edkool_Contest/assets/107809929/9b289158-3b21-4f9f-988a-cdc69fb778c1
 
-
+## Getting Started
+1. Download the zip file.
+2. Run the command: `npm install` in your terminal.
+3. Run the command: `node index.js`. If you have nodemon installed, use `nodemon index.js`.
+4. Open your web browser and navigate to `localhost:3000`.
